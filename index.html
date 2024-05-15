@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolaji_Salam Portfolio1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ca2a8e726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav class="menu">
+            <div class="logo"><p>Payverse</p></div>
+            <ul class="menulink" id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi,<br>I'm <span>James Daniel</span><br>from Norway...</h1>
+        </div>
+    </div>
+
+    <!----------- About Me-------- -->
+    <div id="about">
+        <div class="about-row">
+            <div class="col1">
+                <img src="images/user.png">
+            </div>
+           
+            <div class="col2">
+                <h1>About Me</h1>
+                <p>I am a dedicated web developer who thrives on creating clean code and innovative designs. <br> 
+                    Collaborate with me to transform your creative vision into a dynamic and captivating <br>
+                    website that stands out from the rest..</p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Engineering</span><br>Building and maintaining advanced software applications with C#.</li>
+                            <li><span>Fullstack Development</span><br>Building frontend and backend web applications with ReactJS and NodeJS.</li>
+                            <li><span>Mobile App development</span><br>Building mobile applications with React Native.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Fullstack developer at PAY-VERSE.com</li>
+                            <li><span>2021 - 2022</span><br>Backend developer at KiaKia.ng</li>
+                            <li><span>2020 - 2021</span><br>Intern at Digital Purse.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Software Engineering at MIT</li>
+                            <li><span>2020 - 2021</span><br>Web Development at Meta</li>
+                            <li><span>2020 - 2021</span><br>Communication Studies at State University</li>
+                        </ul>
+                    </div>
+                      
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------MY SERVICES------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>Software Engineering</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sunt, assumenda vero laudantium quis delectus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend & Backend</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sunt, assumenda vero laudantium quis delectus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Mobil App Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur sunt, assumenda vero laudantium quis delectus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- --------Portfolio-------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="Porject-list">
+                <div class="project">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aperiam rerum recusandae nostrum asperiores debitis eaque?</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aperiam rerum recusandae nostrum asperiores debitis eaque?</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aperiam rerum recusandae nostrum asperiores debitis eaque?</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+            </div>
+
+                <a href="#" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+    <!-- -------Contact Me-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="left-column">
+                    <h2>Contact Me</h2>                
+                    <p><i class="fa-solid fa-paper-plane"></i> bolajiabdulsalam@port.com</p>                
+                    <p><i class="fa-solid fa-square-phone"></i>08144448884</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a> <br> 
+                        <a class="form-btn"  href="images/my-cv.pdf" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required><br>
+                        <input type="email" name="Email" placeholder="Your email" required><br>
+                        <textarea class="message" name="Message" placeholder="Type message"></textarea>
+                        <button type="submit" class="form-btn">Submit</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; Copyright James made with <i class="fa-solid fa-heart"></i> by Tech-Verse</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    let sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxb8gO4S586eMlSdseJZEkUAuvX3Jj9XWpGstz150F__WhcyHJn4mubag45Ls14bX3v/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

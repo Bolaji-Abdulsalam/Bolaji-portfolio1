@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.logo {
+    color: orange;
+    font-size:30px;
+    font-weight: 800;
+}
+.menulink {
+    list-style-type: none;
+}
+.menulink li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menulink li a {
+    text-decoration: none;
+    color: wheat;
+    padding: 10px;
+    transition: 0.5s;
+}
+.menulink li a:hover{
+    color: orangered;
+}
+.header-text {
+    margin-top: 15%;
+}
+.header-text p {
+    font-size: 25px;
+    padding: 10px 40px;
+}
+.header-text h1 {
+    padding: 10px 40px;
+    font-size: 40px;
+}
+.header-text span {
+    color: orange;
+}
+
+
+
+/* ----------About Me--------- */
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.col1 {
+    flex-basis: 35%;
+}
+.col1 img {
+    border-radius: 20px;
+    width: 100%;
+}
+.col2 {
+    flex-basis: 60%;
+}
+.col2 h1, p {
+    padding: 5px 0;
+}
+.tab-titles {
+    display: flex;
+}
+.tab-links {
+    padding:0 20px;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+.tab-links:hover {
+    color: orange;
+}
+.tab-links.active-link {
+    color: orangered;
+}
+.tab-contents ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+.tab-contents ul li span {
+    color: orange;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+/* ---------My Services */
+
+#services{
+    padding: 40px;
+}
+.sub-title {
+    padding: 40px 0 10px 0;
+    font-size: 40px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background-color: #262626;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.services-list div i {
+    font-size: 40px;
+    padding: 20px 0 10px 0;
+}
+.services-list div h2{
+    font-size: 30px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: orange;
+    font-size: 12px;
+    margin-top: 20pxpx;
+    display: inline-block;
+    margin-top: 20px;
+}
+.services-list div:hover{
+    background-color: orangered;
+    transform: translateY(-10px);
+}
+.services-list div a:hover{
+    color: blue;
+}
+
+/* ------------Portfolio---------- */
+#portfolio {
+    padding: 40px;
+}
+.container h2 {
+    font-size: 40px;
+    padding: 40px 0 10px 0;
+}
+.Porject-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.project img {
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.project:hover img {
+    transform: scale(1.2);
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), orangered);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 50px;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.layer p{
+    font-size: 14px;
+}
+.layer i {
+    background: white;
+    padding: 20px;
+    color: orangered;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.project:hover .layer {
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: lightgray;
+    border: 1px solid orangered;
+    width: fit-content;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.btn:hover {
+    background: orangered;
+}
+
+
+
+/* -----------Contact -------------- */
+
+.contact-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+    padding: 40px;
+}
+/* .left-column {
+
+} */
+.left-column h2 {
+    padding-top: 0;
+}
+.left-column i {
+    padding-right: 10px;
+    color: orangered;
+}
+.social-icons i {
+    color: whitesmoke;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    padding: 10px 0;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social-icons i:hover{
+    color: orangered;
+    transform: scaley(2);
+}
+
+.right-column{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+.right-column input{
+    background-color: transparent;
+    padding: 20px 0 5px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: whitesmoke;
+}
+
+.message{
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 20px 10px;
+    height: 200px;
+    background-color: rgb(19, 17, 17);
+    color: white;
+    margin-bottom: 40px;
+}
+.form-btn{
+    display: inline-block;
+    width: fit-content;
+    margin-top: 20xp;
+    padding: 10px 40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* -----footer--------- */
+.footer {
+    background: rgb(29, 28, 28);
+    margin-top: 10px;
+    text-align: center;
+    color: #afabab;
+    font-size: 10px;
+    width: 100%;
+}
+.footer i{
+    color: orangered;
+    padding: 20px;
+}
+
+
+/* ------------------Small Screen------------------------ */
+
+nav .fa-solid {
+    display: none;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+    }
+    nav .fa-solid {
+        display: block;
+    }
+    .menulink {
+        background-color: orangered;
+        width: 200px;
+        height: 60vh;
+        top: 0;
+        right: -200px;
+        position: fixed;
+        padding-top: 50px;
+        border-bottom-left-radius: 10px;
+        z-index: 2;
+        transition: 0.4s;
+    }
+    .menulink li {
+        margin: 25px;
+        display: block;
+
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 35px;
+        cursor: pointer;
+    }
+    .col1{
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+    .col2{
+        margin-top: 20px;
+        flex-basis: 80%;
+    }
+    .col2 p {
+        width: 90%;
+    }
+    .tab-links {
+        padding: 5px 10px;
+        margin-right: 20px;
+    }    
+}
+
+#msg {
+    color: green;
+    margin-top: 40px;
+    padding: 20px;
+}
