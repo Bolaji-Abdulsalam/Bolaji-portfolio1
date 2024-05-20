@@ -27,6 +27,8 @@ html {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 30px;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
